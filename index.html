@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>Phạm Văn Mẫn</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"/>
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
+          type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css"/>
+    <link href="css/styles.css" rel="stylesheet"/>
+    <script>
+        const filePath = `data.json`;
+    </script>
+</head>
+<body id="page-top">
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Phạm Văn Mẫn</span>
+        <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
+                                             src="assets/img/profile.png" alt="..."/></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+            class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Thông tin</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Dự án</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Học vấn</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Kĩ năng</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Sở thích</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#targets">Mục tiêu trong tương lai</a></li>
+        </ul>
+    </div>
+</nav>
+<!-- Page Content-->
+<div class="container-fluid p-0">
+    <!-- About-->
+    <section class="resume-section" id="about">
+        <div class="resume-section-content" id="about-me">
+            <script>
+                $(function () {
+                    fetch(filePath)
+                        .then(response => response.json())
+                        .then(data => {
+                            $('#about-me').html(`
+            <h1 class="mb-0" id="name">${data.about.name}</h1>
+            <div class="subheading">
+                ${data.about.birthday}
+            </div>
+            <div class="subheading">
+                ${data.about.address}
+            </div>
+            <div class="subheading">
+                ${data.about.phone}
+            </div>
+            <div class="subheading mb-5">
+                ${data.about.email}
+            </div>
+            <p class="lead mb-5">${data.about.description}</p>`).join("")
+                        })
+                        .catch(error => console.error('Lỗi khi tải dữ liệu:', error));
+                })
+            </script>
+        </div>
+    </section>
+    <hr class="m-0"/>
+    <!-- Projects -->
+    <section class="resume-section" id="projects">
+        <div class="resume-section-content" id="project-list">
+            <h2 class="mb-5">Dự án</h2>
+            <script>
+                $(function () {
+                    fetch(filePath)
+                        .then(response => response.json())
+                        .then(data => {
+                            $('#project-list').html(data.project.map(data => `  <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">${data.name}</h3>
+                    <div class="subheading mb-3">Số thành viên ${data.memberNumber} [${data.position}]</div>
+                    <div class="subheading mb-3">Mô tả</div>
+                    <p>${data.description}</p>
+                    <div class="subheading mb-3">Chức năng chính</div>
+                    <p>${data.function}</p>
+                    <div class="subheading mb-3">Công nghệ sử dụng</div>
+                    <p>${data.technology}</p>
+                    <div class="subheading mb-3">Trách nhiệm</div>
+                    <p>${data.responsibilities}</p>
+                </div>
+                <div class="flex-shrink-0"><span class="text-primary">${data.time}</span></div>
+            </div>`).join(""))
+                        })
+                        .catch(error => console.error('Lỗi khi tải dữ liệu:', error));
+                })
+            </script>
+        </div>
+    </section>
+    <hr class="m-0"/>
+    <!-- Education-->
+    <section class="resume-section" id="education">
+        <div class="resume-section-content">
+            <h2 class="mb-5">Học vấn</h2>
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5" id="education-list">
+                <script>
+                    $(function () {
+                        fetch(filePath)
+                            .then(response => response.json())
+                            .then(data => {
+                                $('#education-list').html(data.education.map(data => `<div class="flex-grow-1">
+                    <h3 class="mb-0">${data.name}</h3>
+                    <div>${data.course}</div>
+                </div>
+                <div class="flex-shrink-0"><span class="text-primary">${data.time}</span></div>`).join(""))
+                            })
+                            .catch(error => console.error('Lỗi khi tải dữ liệu:', error));
+                    })
+                </script>
+            </div>
+        </div>
+    </section>
+    <hr class="m-0"/>
+    <!-- Skills -->
+    <section class="resume-section" id="skills">
+        <div class="resume-section-content">
+            <h2 class="mb-5">Kĩ năng</h2>
+            <div class="subheading mb-3">Ngôn ngữ lập trình</div>
+            <p id="programing-language-list">
+                <script>
+                    $(function () {
+                        fetch(filePath)
+                            .then(response => response.json())
+                            .then(data => {
+                                $('#programing-language-list').html(data.programingLanguages.map(data => `${data}`).join(", "))
+                            })
+                            .catch(error => console.error('Lỗi khi tải dữ liệu:', error));
+                    })
+                </script>
+            </p>
+            <div class="subheading mb-3">Công nghệ Web Front-end</div>
+            <p id="web-frontend-technology-list">
+                <script>
+                    $(function () {
+                        fetch(filePath)
+                            .then(response => response.json())
+                            .then(data => {
+                                $('#web-frontend-technology-list').html(data.webFrontendTechnology.map(data => `${data}`).join(", "))
+                            })
+                            .catch(error => console.error('Lỗi khi tải dữ liệu:', error));
+                    })
+                </script>
+            </p>
+            <div class="subheading mb-3"> Công nghệ Web Back-end</div>
+            <p id="web-backend-technology-list">
+                <script>
+                    $(function () {
+                        fetch(filePath)
+                            .then(response => response.json())
+                            .then(data => {
+                                $('#web-backend-technology-list').html(data.webBackendTechnology.map(data => `${data}`).join(", "))
+                            })
+                            .catch(error => console.error('Lỗi khi tải dữ liệu:', error));
+                    })
+                </script>
+            </p>
+            <div class="subheading mb-3"> Công nghệ Mobile</div>
+            <p id="mobile-technology-list">
+                <script>
+                    $(function () {
+                        fetch(filePath)
+                            .then(response => response.json())
+                            .then(data => {
+                                $('#mobile-technology-list').html(data.mobileTechnology.map(data => `${data}`).join(", "))
+                            })
+                            .catch(error => console.error('Lỗi khi tải dữ liệu:', error));
+                    })
+                </script>
+            </p>
+            <div class="subheading mb-3">Cơ sở dữ liệu</div>
+            <p id="database-list">
+                <script>
+                    $(function () {
+                        fetch(filePath)
+                            .then(response => response.json())
+                            .then(data => {
+                                $('#database-list').html(data.database.map(data => `${data}`).join(", "))
+                            })
+                            .catch(error => console.error('Lỗi khi tải dữ liệu:', error));
+                    })
+                </script>
+            </p>
+            <div class="subheading mb-3">Quản lý mã nguồn và công cụ phát triển</div>
+            <p id="tool-list">
+                <script>
+                    $(function () {
+                        fetch(filePath)
+                            .then(response => response.json())
+                            .then(data => {
+                                $('#tool-list').html(data.tool.map(data => `${data}`).join(", "))
+                            })
+                            .catch(error => console.error('Lỗi khi tải dữ liệu:', error));
+                    })
+                </script>
+            </p>
+        </div>
+    </section>
+    <hr class="m-0"/>
+    <!-- Interests -->
+    <section class="resume-section" id="interests">
+        <div class="resume-section-content" id="interest-list">
+            <h2 class="mb-5">Sở thích</h2>
+            <script>
+                $(function () {
+                    fetch(filePath)
+                        .then(response => response.json())
+                        .then(data => {
+                            $('#interest-list').append(`<p>${data.interests}</p>`)
+                        })
+                        .catch(error => console.error('Lỗi khi tải dữ liệu:', error));
+                })
+            </script>
+        </div>
+    </section>
+    <hr class="m-0"/>
+    <!-- Targets -->
+    <section class="resume-section" id="targets">
+        <div class="resume-section-content">
+            <h2 class="mb-5">Mục tiêu trong tương lai</h2>
+            <ul class="fa-ul mb-0" id="targets-list">
+                <script>
+                    $(function () {
+                        fetch(filePath)
+                            .then(response => response.json())
+                            .then(data => {
+                                $('#targets-list').html(data.targets.map(target => `<li>
+                    <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                    ${target}
+                </li>`).join(''))
+                            })
+                            .catch(error => console.error('Lỗi khi tải dữ liệu:', error));
+                    })
+                </script>
+            </ul>
+        </div>
+    </section>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

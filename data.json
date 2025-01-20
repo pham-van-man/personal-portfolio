@@ -1,0 +1,104 @@
+{
+  "targets": [
+    "Học ASP.NET",
+    "Học Python",
+    "Học C++",
+    "Học Docker",
+    "Học MongoDB",
+    "Học tiếng anh",
+    "Học tiếng trung"
+  ],
+  "interests": "Thích lập trình những gì mang tính \"động não\", đặc biệt là về thuật toán và tự động hóa. Tìm hiểu các bài toán logic và sáng tạo giải pháp mới. Làm việc với mã nguồn liên quan đến dữ liệu thay vì giao diện hoặc ngôn ngữ front-end.",
+  "programingLanguages": [
+    "Java",
+    "Kotlin",
+    "C#",
+    "TypeScript",
+    "SQL"
+  ],
+  "webFrontendTechnology": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "ReactJS",
+    "Angular",
+    "TypeScript",
+    "Bootstrap",
+    "jQuery",
+    "Thymeleaf",
+    "Redux"
+  ],
+  "webBackendTechnology": [
+    "Spring Framework",
+    "JSP/Servlet",
+    "RESTful API",
+    "WebSocket",
+    "JDBC",
+    "Hibernate",
+    "Spring Security",
+    "JWT",
+    "Java Collection",
+    "OOP",
+    "LINQ"
+  ],
+  "mobileTechnology": [
+    "Jetpack Compose"
+  ],
+  "database": [
+    "MySQL",
+    "Microsoft SQL Server",
+    "Firebase",
+    "SQLite"
+  ],
+  "tool": [
+    "GitHub",
+    "Trello",
+    "Postman",
+    "Azure Data Studio",
+    "MySQL Workbench",
+    "SQL Server Management Studio",
+    "Docker",
+    "Intellij IDE",
+    "Visual Studio Code",
+    "Visual Studio",
+    "WebStorm",
+    "Android Studio"
+  ],
+  "education": [
+    {
+      "name": "Trung tâm đào tạo lập trình viên CodeGym",
+      "course": "Khóa đào tạo Fullstack Web Developer toàn thời gian",
+      "time": "5/20224 - 12/2024"
+    }
+  ],
+  "about": {
+    "name": "Phạm Văn Mẫn",
+    "birthday": "08/06/2002",
+    "address": "Lộc Tiến, Phú Lộc, Thừa Thiên Huế",
+    "email": "phamvanman.com.vn@gmail.com",
+    "phone": "0387311825",
+    "description": "Chào bạn, tôi là Mẫn, một lập trình viên đam mê phát triển phần mềm, đặc biệt là trong lĩnh vực backend. Tôi thích giải quyết các vấn đề logic phức tạp và xây dựng các hệ thống tự động hóa, tối ưu hiệu suất và bảo mật của ứng dụng. Với nền tảng vững chắc về Java, và C#, tôi luôn tìm cách tối ưu hóa quy trình làm việc và cung cấp những giải pháp hiệu quả, dễ duy trì. Mặc dù tôi không đam mê frontend, nhưng tôi luôn chú trọng vào việc phát triển phần backend mạnh mẽ và có tính mở rộng cao, đảm bảo rằng người dùng có thể trải nghiệm các ứng dụng mượt mà và an toàn. Tôi luôn sẵn sàng học hỏi và áp dụng các công nghệ mới vào các dự án của mình, vì tôi tin rằng sự đổi mới và sáng tạo là chìa khóa để thành công trong ngành công nghệ. Ngoài công việc, tôi yêu thích việc xây dựng những ứng dụng tự động hóa các tác vụ lặp đi lặp lại, giúp tiết kiệm thời gian và công sức. Tôi luôn cố gắng cải thiện kỹ năng giao tiếp và làm việc nhóm, vì tôi tin rằng cộng tác hiệu quả là yếu tố then chốt trong việc đạt được kết quả tuyệt vời."
+  },
+  "project": [
+    {
+      "name": "Website thương mại điện tử",
+      "time": "08/2024 - 4 ngày",
+      "memberNumber": "4",
+      "position": "Trưởng nhóm",
+      "description": "Là dự án nhóm, được xây dựng sau khi học xong module 3 tại CodeGym. Trang web cung cấp các sản phẩm thiết bị quân sự, bao gồm vũ khí, trang thiết bị bảo hộ, và các công cụ hỗ trợ tác chiến. Website giúp khách hàng dễ dàng duyệt qua các danh mục sản phẩm, thêm sản phẩm vào giỏ hàng và thực hiện thanh toán trực tuyến một cách nhanh chóng và an toàn.",
+      "function": "Các sản phẩm được phân loại rõ ràng theo loại và chức năng, giúp người dùng dễ dàng tìm kiếm. Người dùng có thể thêm sản phẩm vào giỏ hàng, cập nhật số lượng, và xem tổng giá trị đơn hàng. Khách hàng có thể đăng ký tài khoản hoặc đăng nhập bằng tài khoảng google hoặc facebook và quản lý thông tin cá nhân. Hỗ trợ thanh toán qua cổng thanh toán VNPay. Tính năng tìm kiếm sử dụng ajax giúp tăng nhanh tốc độ tìm kiếm, người dùng có thể nhanh chóng tìm được sản phẩm mong muốn. Người dùng có thể để lại đánh giá cho sản phầm giúp nhà sản xuất cải thiện chất lượng sản phầm và cung cấp thông tin cho những khác hàng khác. Quản trị viên có thể xem và quản lý các đơn hàng của khách hàng.",
+      "technology": "Servlets, JavaMai, Facebook Developers, Google Cloud Console, VNPayAPI, Session, JSP, HTML, CSS, JavaScript, bootstrap, dialogflow, jQuery, ajax, MySQL, IntelliJ IDE, Apache Tomcat, MySQL Workbench",
+      "responsibilities": "Giám sát toàn bộ quá trình phát triển và đảm bảo sự hợp tác nhóm hiệu quả. Phát triển giao diện người dùng. Xây dựng cơ sở dữ liệu. Xây dựng các tính năng bảo mật để bảo vệ dữ liệu. Tích hợp hệ thống đăng nhập Facebook và gửi hóa đơn qua email. Xây dựng chức năng thanh toán với VNPayAPI. Phát triển tính năng chatbox thời gian thực Xây dựng chức năng quản lý sản phẩm. Xây dựng tính năng giỏ hàng. Xây dựng chức năng mã hóa văn bản UTF-8. Hỗ trợ các thành viên trong nhóm, cung cấp hướng dẫn và đảm bảo hoàn thành mọi nhiệm vụ kịp thời."
+    },
+    {
+      "name": "Ứng dụng mạng xã hội",
+      "time": "09/2024 - 4 ngày",
+      "memberNumber": "5",
+      "position": "Trưởng nhóm",
+      "description": "Là dự án nhóm được, xây dựng sau khi học xong module 4 tại CodeGym. Dự án là một nền tảng mạng xã hội giúp người dùng kết nối, chia sẻ thông tin và tương tác với bạn bè hoặc cộng đồng trực tuyến. Website hỗ trợ các tính năng như tạo hồ sơ cá nhân, kết bạn, chia sẻ bài viết, hình ảnh, và video, cũng như tương tác qua bình luận và thích. Mục tiêu của dự án là tạo ra một không gian trực tuyến nơi người dùng có thể giao lưu và xây dựng các mối quan hệ, cùng nhau chia sẻ những khoảnh khắc trong cuộc sống.",
+      "function": "Người dùng có thể tạo và chỉnh sửa hồ sơ cá nhân với thông tin cơ bản, ảnh đại diện, ảnh bìa, và thông tin chi tiết. Người dùng có thể gửi lời mời kết bạn và theo dõi bạn bè hoặc các trang cá nhân. Người dùng có thể tạo bài viết mới, chia sẻ hình ảnh, video kèm theo mô tả hoặc chú thích. Người dùng có thể bình luận và tương tác với bài viết của bạn bè, thích hoặc chia sẻ bài viết. Người dùng nhận được thông báo về các hoạt động mới, lời mời kết bạn, và các sự kiện trong mạng xã hội. Người dùng có thể trò chuyện qua tin nhắn riêng tư với bạn bè hoặc nhóm.",
+      "technology": "Spring boot, Spring Security, WebSocket, Hibernate, Facebook Developers, Fire Base, Thymeleaf, jQuery, ajax, HTML, CSS, JS, bootstrap, MySQL, IntelliJ IDEA, Postman, Apache Tomcat, MySQL Workbench",
+      "responsibilities": "Giám sát toàn bộ quá trình phát triển và đảm bảo sự hợp tác nhóm hiệu quả. Xây dựng cơ sở dữ liệu. Triển khai các tính năng bảo mật. Xây dựng tính năng xác thực bằng Facebook. Phát triển các tính năng tạo, chỉnh sửa và xóa bài đăng. Phát triển tính năng tạo, chỉnh sửa và xóa nhận xét bài đăng. Xây dựng tính năng kết bạn, theo dõi, nhắn tin và thông báo. Phát triển các tính năng cập nhật ảnh đại diện, thích bài viết, xem bạn bè, người theo dõi và người dùng đã thích bài viết. Hỗ trợ các thành viên trong nhóm, cung cấp hướng dẫn và đảm bảo hoàn thành mọi nhiệm vụ kịp thời."
+    }
+  ]
+}
