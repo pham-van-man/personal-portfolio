@@ -60,10 +60,11 @@
             <div class="subheading">
                 ${data.about.phone}
             </div>
-            <div class="subheading mb-5">
+            <div class="subheading">
                 ${data.about.email}
             </div>
-            <p class="lead mb-5">${data.about.description}</p>`).join("")
+            <div class="subheading mb-5"><a href="${data.about.github}">Github</a></div>
+            <p class="lead mb-5">${data.about.description}</p>`)
                         })
                         .catch(error => console.error('Lỗi khi tải dữ liệu:', error));
                 })
