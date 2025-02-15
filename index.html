@@ -143,40 +143,27 @@
                     })
                 </script>
             </p>
-            <div class="subheading mb-3">Công nghệ Web Front-end</div>
+            <div class="subheading mb-3">Framework/Platforms & Library</div>
             <p id="web-frontend-technology-list">
                 <script>
                     $(function () {
                         fetch(filePath)
                             .then(response => response.json())
                             .then(data => {
-                                $('#web-frontend-technology-list').html(data.webFrontendTechnology.map(data => `${data}`).join(", "))
+                                $('#web-frontend-technology-list').html(data.frameworkPlatformsLibrary.map(data => `${data}`).join(", "))
                             })
                             .catch(error => console.error('Lỗi khi tải dữ liệu:', error));
                     })
                 </script>
             </p>
-            <div class="subheading mb-3"> Công nghệ Web Back-end</div>
-            <p id="web-backend-technology-list">
+    <div class="subheading mb-3">Kiến trúc thiết kế</div>
+            <p id="software-architecture-list">
                 <script>
                     $(function () {
                         fetch(filePath)
                             .then(response => response.json())
                             .then(data => {
-                                $('#web-backend-technology-list').html(data.webBackendTechnology.map(data => `${data}`).join(", "))
-                            })
-                            .catch(error => console.error('Lỗi khi tải dữ liệu:', error));
-                    })
-                </script>
-            </p>
-            <div class="subheading mb-3"> Công nghệ Mobile</div>
-            <p id="mobile-technology-list">
-                <script>
-                    $(function () {
-                        fetch(filePath)
-                            .then(response => response.json())
-                            .then(data => {
-                                $('#mobile-technology-list').html(data.mobileTechnology.map(data => `${data}`).join(", "))
+                                $('#software-architecture-list').html(data.softwareArchitecture.map(data => `${data}`).join(", "))
                             })
                             .catch(error => console.error('Lỗi khi tải dữ liệu:', error));
                     })
@@ -195,7 +182,7 @@
                     })
                 </script>
             </p>
-            <div class="subheading mb-3">Quản lý mã nguồn và công cụ phát triển</div>
+            <div class="subheading mb-3">Công cụ phát triển</div>
             <p id="tool-list">
                 <script>
                     $(function () {
