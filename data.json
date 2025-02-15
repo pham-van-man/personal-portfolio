@@ -9,13 +9,13 @@
     "Học tiếng trung"
   ],
   "interests": "Thích lập trình những gì mang tính \"động não\", đặc biệt là về thuật toán và tự động hóa. Tìm hiểu các bài toán logic và sáng tạo giải pháp mới. Làm việc với mã nguồn liên quan đến dữ liệu thay vì giao diện hoặc ngôn ngữ front-end.",
-  "programingLanguages": ["Java", "Kotlin", "C#", "TypeScript"],
- "frameworkPlatformsLibrary": [
+  "programmingLanguages": ["Java", "Kotlin", "C#", "TypeScript"],
+ "frameworkPlatformsLibraries": [
     "Spring Framework", "Spring Security", "ASP.NET", "Identity Framework",
     "ReactJS", "Angular", "JSP/Servlet", "Thymeleaf", "Razor Page",
     "Redux", "Bootstrap", "jQuery", "Hibernate", "WebSocket", "JDBC", "Jetpack Compose"
   ],
- "softwareArchitecture": ["MVC", "MVVM", "RESTful API"],
+ "architecturePatterns": ["MVC", "MVVM", "RESTful API"],
   "database": [
     "MySQL",
     "Microsoft SQL Server",

@@ -131,39 +131,39 @@
         <div class="resume-section-content">
             <h2 class="mb-5">Kĩ năng</h2>
             <div class="subheading mb-3">Ngôn ngữ lập trình</div>
-            <p id="programing-language-list">
+            <p id="programming-language-list">
                 <script>
                     $(function () {
                         fetch(filePath)
                             .then(response => response.json())
                             .then(data => {
-                                $('#programing-language-list').html(data.programingLanguages.map(data => `${data}`).join(", "))
+                                $('#programming-language-list').html(data.programmingLanguages.map(data => `${data}`).join(", "))
                             })
                             .catch(error => console.error('Lỗi khi tải dữ liệu:', error));
                     })
                 </script>
             </p>
-            <div class="subheading mb-3">Framework/Platforms & Library</div>
-            <p id="web-frontend-technology-list">
+            <div class="subheading mb-3">Framework, Platforms & Libraries</div>
+            <p id="framework-platforms-libraries-list">
                 <script>
                     $(function () {
                         fetch(filePath)
                             .then(response => response.json())
                             .then(data => {
-                                $('#web-frontend-technology-list').html(data.frameworkPlatformsLibrary.map(data => `${data}`).join(", "))
+                                $('#framework-platforms-libraries-list').html(data.frameworkPlatformsLibraries.map(data => `${data}`).join(", "))
                             })
                             .catch(error => console.error('Lỗi khi tải dữ liệu:', error));
                     })
                 </script>
             </p>
     <div class="subheading mb-3">Kiến trúc thiết kế</div>
-            <p id="software-architecture-list">
+            <p id="architecture-patterns-list">
                 <script>
                     $(function () {
                         fetch(filePath)
                             .then(response => response.json())
                             .then(data => {
-                                $('#software-architecture-list').html(data.softwareArchitecture.map(data => `${data}`).join(", "))
+                                $('#architecture-patterns-list').html(data.architecturePatterns.map(data => `${data}`).join(", "))
                             })
                             .catch(error => console.error('Lỗi khi tải dữ liệu:', error));
                     })
